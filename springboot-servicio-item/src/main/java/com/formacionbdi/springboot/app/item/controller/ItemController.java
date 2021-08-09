@@ -19,6 +19,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -39,7 +41,7 @@ public class ItemController {
 
 	@Autowired
 	@Qualifier("serviceFeign")
-	//@Qualifier("serviceRestTemplate")
+	// @Qualifier("serviceRestTemplate")
 	private ItemService itemService;
 
 	@Value("${configuracion.texto}")
@@ -49,6 +51,14 @@ public class ItemController {
 	public List<Item> lista() {
 		return itemService.findAll();
 	}
+
+//	@GetMapping("/listar")
+//	public List<Item> lista(@RequestParam(name = "nombre") String nombre,
+//			@RequestHeader(name = "token-request") String token) {
+//		System.out.println(nombre);
+//		System.out.println(token);
+//		return itemService.findAll();
+//	}
 
 	@HystrixCommand(fallbackMethod = "metodoAlternativo")
 	@GetMapping("/ver/{id}/cantidad/{cantidad}")
