@@ -1,4 +1,4 @@
-package com.formacionbdi.springboot.app.usuarioscommons;
+package com.formacionbdi.springboot.app.commons.usuarios;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
