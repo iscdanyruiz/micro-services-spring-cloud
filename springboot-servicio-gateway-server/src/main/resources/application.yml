@@ -2,8 +2,8 @@ spring:
   cloud:
     gateway:
       httpclient:
-        connect-timeout: 60000
-        response-timeout: 60s
+        connect-timeout: 9000
+        response-timeout: 30000
       routes:
       - id: servicio-productos
         uri: lb://servicio-productos
