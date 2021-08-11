@@ -8,7 +8,7 @@
 		<version>2.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.formacionbdi.springboot.app.usuarios-commons</groupId>
+	<groupId>com.formacionbdi.springboot.app.usuarios.commons</groupId>
 	<artifactId>springboot-servicio-usuarios-commons</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-servicio-usuarios-commons</name>
@@ -28,11 +28,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-
-		</plugins>
-	</build>
-
 </project>

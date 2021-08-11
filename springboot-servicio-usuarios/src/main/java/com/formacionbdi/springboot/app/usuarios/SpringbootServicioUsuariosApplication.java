@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@EntityScan({".app.commons.usuarios.models.entity"})
+@EntityScan({"com.formacionbdi.springboot.app.commons.usuarios.models.entity"})
 @SpringBootApplication
 public class SpringbootServicioUsuariosApplication {
 
