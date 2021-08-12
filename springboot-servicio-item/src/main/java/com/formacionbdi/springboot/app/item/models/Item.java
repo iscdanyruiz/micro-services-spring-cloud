@@ -1,7 +1,5 @@
 package com.formacionbdi.springboot.app.item.models;
 
-import java.util.Date;
-
 public class Item {
 	private Producto producto;
 	private Integer cantidad;
