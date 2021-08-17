@@ -47,7 +47,7 @@ public class UsuarioService implements UserDetailsService, IUsuarioService {
 
 	@Override
 	public Usuario findByUsername(String username) {
-		return null;
+		return client.findByUsername(username);
 	}
 
 }
